@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Protofolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="author" content="width-device-width,initial-scale-1.0">
+  <meta name="description" content="Personal Portfolio of Anusha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAKSHMI Portfolio</title>
+</head>
+
+<body>
+
+  <div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I am <strong>AdhiLakshmi</strong>, a BSc Computer Science graduate in the combination of maths statistics
+      and computer skills</p>
+  </div>
+  <hr>
+  
+  <div>
+    <h2>About Me</h2>
+    <p>I am passionate about technology, communication, and adaptability. I recently completed an internship where I
+      explored on Machine learning Programmes.</p>
+  </div>
+  <hr>
+  
+<div>
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>C++</strong> </li>
+    <li><strong>JAVA</strong></li>
+    <li><strong>HTML</strong> </li>
+  </ul>
+  </div>
+  <hr>
+  
+
+  <div>
+    <h2>Education</h2>
+    <table border="1">
+      <tbody><tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Year</th>
+      </tr>
+       <tr>
+        <td>BSc Computer Science</td>
+        <td>SDMS College</td>
+        <td>2025</td>
+      </tr>
+      <tr><td>Intermediate</td>
+      <td>Srichaitanya junior College</td>
+      <td>2022</td>
+      </tr>
+      <tr><td>SSC</td>
+      <td>LVM High School</td>
+      <td>2019</td>
+      </tr>
+    </tbody></table>
+  </div>
+  <hr>
+  
+  <div>
+    <h2>registration form</h2>
+    <form>
+      <p> <label for="">username:-</label><br>
+        <input type="text"><br>
+      </p>
+      <p> <label for="">email:-</label><br>
+        <input type="email"><br>
+      </p>
+      <p> <label for="">password:-</label><br>
+        <input type="password"><br>
+      </p>
+      <p> <label for="">gender:-</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female <br>
+      </p>
+      <p> <label for="">hobbies:-</label>
+        <input type="checkbox" value="reading books">reading books
+        <input type="checkbox" value="cooking">cooking<br>
+      </p>
+      <p><label for="">date of birth:-</label><br>
+        <input type="date"><br>
+      </p>
+      <p> <label for="">favourite language:-</label>
+        <select name="" id="">
+          <option value="c">c language</option>
+          <option value="c++">c++ language</option>
+          <option value="html">html language</option>
+          <option value="java">java language</option>
+        </select><br>
+      </p>
+      <p> <label for="">upload resume:-</label><br>
+        <input type="file">
+        <br>
+      </p>
+      <p></p><input type="submit">
+      <hr>
+  </form></div>
+  <div>
+    <h2>Contact</h2>
+    <p>Email:adhilakshmivanamu@gmail.com</p>
+    <p>Phone No:9494126538</p>
+  </div>
+  <hr>
+  
+  <div>
+    <h2>Social Links</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a href="https://github.com/">GitHub</a></li>
+    </ul>
+  </div>
+  <hr>
+  
+  <div>
+    <p><!-- This is a comment -->Thank you for visiting my portfolio!</p>
+  </div>
+  <hr>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
