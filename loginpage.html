@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background:linear-gradient(to right,#ff0066,#6a00ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 500px;
+        padding: 100px;
+        margin: auto;
+    }
+    .login-container{
+        background-color: white;
+        padding: 40px 80px;
+        max-width: 600px;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .login-container h2{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .login-row{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 5px;
+        position: relative;
+    }
+    .login-row label{
+        font-size: 20px;
+        color: rgb(58, 58, 58);
+        margin-bottom: 5px;
+    }
+    .login-row input[type="text"],
+    .login-row input[type="password"]{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #5a5a5a;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .login-btn{
+        background-color: rgb(0, 140, 255);
+        border: none;
+        color: white;
+        width: 100%;
+        border-radius: 10px;
+        padding: 7px;
+        margin: auto;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .sign-up label{
+        color: rgb(58, 58, 58);
+        padding: 15px;
+    }
+    .login-row i{
+        position: absolute;
+      right: 10px;
+      top: 70%;
+      transform: translateY(-40%);
+    }
+</style>
+<body>
+    <div class="login-container">
+        <form action="#">
+            <div>
+                <h2>Log In Form</h2>
+            </div>
+            <div class="login-row">
+                <label for="username">User Name</label>
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" placeholder="Email or Phone Number" required>
+            </div><br>
+            <div class="login-row">
+                <label for="password">Password</label>
+                <i class="fas fa-eye-slash"></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div><br>
+            <button type="submit" class="login-btn">Log In</button><br><br>
+            <div class="sign-up">
+                <label>Don't have an account? <a href="registration page.html">Sign up</a></label>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>
