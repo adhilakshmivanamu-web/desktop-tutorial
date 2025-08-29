@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.lakshmi - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">My Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#grades">Grades</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+
+                </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="bg-image text-center text-white p-5"
+            style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; height: 200px;">
+
+            <h1 class=" text-center mb-2  text-success sticky-top">Welcome to My Portfolio</h1>
+            <p class="lead text-center p-3 mb-2 text-light">Welcome to my portfolio page! Here you will
+                find a
+                collection of my work, projects, and achievements</p>
+
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4 ">About Me</h2>
+        <hr>
+        <p class="text-center">My name is <b>V.Lakshmi</b> I started my journey as a frontend developer, learning HTML,
+      PHP , and JavaScript to build modern user interfaces and responsive web applications.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-12">
+                    <div class="card-body bg-success">
+                        <h5 class="card-title text-white text-center">Soft Skills</h5>
+                        <ul class="list-group list-group-flush shadow rounded">
+                            <li class="list-group-item ">Communication</li>
+                            <li class="list-group-item">Teamwork</li>
+                            <li class="list-group-item">Problem-solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-12">
+                    <div class="card-body  bg-success">
+                        <h5 class="card-title text-white text-center">Technical Skills</h5>
+                        <ul class="list-group list-group-flush shadow rounded">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">PHP</li>
+                            <li class="list-group-item">Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grades Section -->
+    <section id="grades" class="container my-5">
+        <h2 class="text-center mb-4">Subjects & Grades</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Subjects</th>
+                        <th>Marks</th>
+                        <th>Grades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>90</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>80</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>80</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4 text-success">Inquiry Form</h2>
+        <form class="p-4 shadow rounded bg-white ">
+            <div class="row ">
+                <div class="col-md-6">
+                    <label for="name" class="form-label text-success">First Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter First Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label text-success">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label text-success">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label text-success">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+91-XXXXXXXXXX" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label text-success">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here..."
+                        required></textarea>
+                </div>
+                <div class="col-12">
+                    <label for="subject" class="form-label text-success">Subject</label>
+                    <select id="subject" class="form-select" required>
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="file" class="form-label text-success">Upload File</label>
+                    <input type="file" class="form-control" id="file" accept=".jpg,.jpeg,.png,.pdf" required>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-success px-5 mt-3">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-">
+            <p class=" text-center mb-4 bg-success text-white">&copy; 2025 V.Lakshmi . All rights reserved.<br>
+                Follow me on:
+                <a href="https://www.linkedin.com" class="text-info">LinkedIn</a> |
+                <a href="https://github.com/lakshmiux" class="text-info">GitHub</a> |
+                <a href="https://twitter.com" class="text-info">Twitter</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
