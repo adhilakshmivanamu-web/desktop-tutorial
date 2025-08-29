@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background-image: linear-gradient(to bottom, #33ccff, #0069cc);
+      color: #fff;
+      padding: 100px;
+      text-align: center;
+    }
+    .about {
+      padding: 50px;
+    }
+    .projects {
+      background-color: #f7f7f7;
+      padding: 50px;
+    }
+    .contact {
+      padding: 50px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to my portfolio!</h1>
+    <p>I'm a web developer with a passion for more information HTML webpage.</p>
+    <button class="btn btn-light">Learn More</button>
+  </div>
+
+  <!-- About Section -->
+  <div class="about">
+    <h2>About Me</h2>
+    <p>Lakshmi recently I completed  My degree Bsc in computer science.</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects">
+    <h2>My Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">I'm a web developer with a passion for more information HTML webpage.</p>
+            <button class="btn btn-sm btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">I'm a web developer with a passion for more information HTML webpage.</p>
+            <button class="btn btn-sm btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">I'm a web developer with a passion for more information HTML webpage</p>
+            <button class="btn btn-sm btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact">
+    <h2>Get in Touch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
